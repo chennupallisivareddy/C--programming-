@@ -1,0 +1,75 @@
+write a programe to print numbers between b/w lower limit and upper limit
+#include <stdio.h>
+
+int main()
+{
+int lower,upper;
+scanf("%d%d",&lower,&upper);
+while(lower<upper)
+{
+
+    printf("%d",lower);
+    lower++;
+}
+printf("%d",lower);
+    return 0;
+}				
+
+
+
+
+//write a programe to print numbers between b/w lower limit and upper limit
+//  with invalid input
+#include <stdio.h>
+
+int main()
+{
+int lower,upper;
+scanf("%d%d",&lower,&upper);
+if(lower>=upper)
+{
+while(lower<upper)
+{
+
+    printf("%d",lower);
+    lower++;
+}
+printf("%d",lower);
+}
+else
+{
+    printf("invalid input");
+}
+    return 0;
+}
+
+
+
+
+
+//write a programe to print  even numbers between b/w lower limit and upper limit
+//  with invalid input
+#include <stdio.h>
+
+int main()
+{
+int lower,upper;
+scanf("%d%d",&lower,&upper);
+if(lower<=upper)
+{
+while(lower<upper)
+{
+    if(lower%2==0)
+    {
+    printf("%d",lower);
+    }
+    lower++;
+}
+printf("%d",lower);
+}
+else
+{
+    printf("invalid input");
+}
+    return 0;
+}
